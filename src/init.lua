@@ -3,4 +3,5 @@ return {
 	fromHex = require(script.fromHex),
 	isLight = require(script.isLight),
 	isDark = require(script.isDark),
+	negate = require(script.negate),
 }
