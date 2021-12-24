@@ -1,0 +1,16 @@
+{
+  "name": "hue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "moonwave dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "David Minnerly",
+  "license": "MIT",
+  "devDependencies": {
+    "moonwave": "^0.2.14"
+  }
+}

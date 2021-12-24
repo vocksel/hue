@@ -1,0 +1,19 @@
+{
+    "name": "hue (dev)",
+    "tree": {
+        "$className": "DataModel",
+        "ReplicatedStorage": {
+            "Packages": {
+                "$path": "Packages",
+                "Hue": {
+                    "$path": "src"
+                }
+            }
+        },
+        "ServerScriptService": {
+            "Tests": {
+                "$path": "tests"
+            }
+        }
+    }
+}
