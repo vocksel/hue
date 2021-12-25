@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="Docusaurus v2.0.0-beta.9">
+<title data-react-helmet="true">Hue | hue</title><meta data-react-helmet="true" property="og:title" content="Hue | hue"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="description" content="An assortment of functions for dealing with Color3 values."><meta data-react-helmet="true" property="og:description" content="An assortment of functions for dealing with Color3 values."><meta data-react-helmet="true" property="og:url" content="https://vocksel.github.io/hue/api/Hue"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://vocksel.github.io/hue/api/Hue"><link data-react-helmet="true" rel="alternate" href="https://vocksel.github.io/hue/api/Hue" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://vocksel.github.io/hue/api/Hue" hreflang="x-default"><link rel="stylesheet" href="/hue/assets/css/styles.4e7602c1.css">
+<link rel="preload" href="/hue/assets/js/runtime~main.9cf1ed28.js" as="script">
+<link rel="preload" href="/hue/assets/js/main.78a78f2c.js" as="script">
+</head>
+<body>
+<script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
+<div><a href="#" class="skipToContent_1oUP">Skip to main content</a></div><nav class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle clean-btn" type="button" tabindex="0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/hue/"><b class="navbar__title">hue</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/hue/api/">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/vocksel/hue" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link"><span>GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_3J9K"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></span></a><div class="toggle_71bT toggle_3Zt9 toggleDisabled_3cF-"><div class="toggleTrack_32Fl" role="button" tabindex="-1"><div class="toggleTrackCheck_3lV7"><span class="toggleIcon_O4iE">🌜</span></div><div class="toggleTrackX_S2yS"><span class="toggleIcon_O4iE">🌞</span></div><div class="toggleTrackThumb_xI_Z"></div></div><input type="checkbox" class="toggleScreenReader_28Tw" aria-label="Switch between dark and light mode"></div><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Press S to Search..." aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div class="main-wrapper docPageContainer_2Kz0"><div class="docPage_1bdk"><div class="docSidebarContainer_1ykS"><div class="sidebar_15mo"><nav class="menu thin-scrollbar menu_Bmed"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/hue/api/Hue">​Hue</a></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_1CGd"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_3E-R"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div><main class="docMainContainer_28N5"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_3WPG"><div class="docItemContainer_3XDu"><article><div class="member_qHIL markdown"><div class="tocCollapsible_1PrD theme-doc-toc-mobile tocMobile_3ryM"><button type="button" class="clean-btn tocCollapsibleButton_2O1e">On this page</button></div><header><h1 class="docTitle_1ddc" style="text-decoration:none"><span style="display:inline-block">Hue</span></h1><div class="luaClassTags_2Zrs"></div><div>
+<p>An assortment of functions for dealing with Color3 values.</p>
+</div></header><h2 class="anchor anchorWithStickyNavbar_31ik" id="properties">Properties<a aria-hidden="true" class="hash-link" href="#properties" title="Direct link to heading">​</a></h2><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="colors"><code style="text-decoration:none">colors</code><a aria-hidden="true" class="hash-link" href="#colors" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/hue/blob/master/src/colors.lua#L9"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Hue<!-- -->.<!-- -->colors<!-- -->:<!-- --> </code> <code class="blue_2Afy">table</code></div><div>
+<p>
+  An assortment of predefined, accessible colors based off of the research in
+  "Mutually Arising: Improving accessibility in Discord team role color
+  contrast (2021)," found here: <a href="https://sibr.dev/research.html" target="_blank">https://sibr.dev/research.html</a>
+</p>
+</div><h2 class="anchor anchorWithStickyNavbar_31ik" id="functions">Functions<a aria-hidden="true" class="hash-link" href="#functions" title="Direct link to heading">​</a></h2><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="fromHex"><code style="text-decoration:none">fromHex</code><a aria-hidden="true" class="hash-link" href="#fromHex" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/hue/blob/master/src/fromHex.lua#L19"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Hue<!-- -->.</code><code class="green_3LnD">fromHex</code><code>(</code><div class="inset_2cJr"><div><code>hex<!-- -->: </code><code class="blue_2Afy">string</code><span class="inlineDescription_17uy">-- <span>
+<p>A hexadecimal string representing a color</p>
+</span></span></div></div><code>) → </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_17uy">-- <span>
+<p>Returns the Color3 equivalent of the hex string</p>
+</span></span></div><div>
+<p>Converts a given hex string into a Color3.</p>
+<p>The hex string can optionall start with a hash # but it is not required.</p>
+<p>You can also optionally use short, 3 character hex codes for convenience.</p>
+<pre class="language-lua"><code class="language-lua"><span class="token function">fromHex</span><span class="token punctuation">(</span><span class="token string">"#fff"</span><span class="token punctuation">)</span>
+<span class="token function">fromHex</span><span class="token punctuation">(</span><span class="token string">"#f0f0f0"</span><span class="token punctuation">)</span>
+<span class="token function">fromHex</span><span class="token punctuation">(</span><span class="token string">"ff3685"</span><span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="grayscale"><code style="text-decoration:none">grayscale</code><a aria-hidden="true" class="hash-link" href="#grayscale" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/hue/blob/master/src/grayscale.lua#L9"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Hue<!-- -->.</code><code class="green_3LnD">grayscale</code><code>(</code><div class="inset_2cJr"><div><code>color<!-- -->: </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_17uy">-- <span>
+<p>The color to convert to grayscale</p>
+</span></span></div></div><code>) → </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_17uy">-- <span>
+<p>Returns a new grayscale Color3 based off <code>color</code></p>
+</span></span></div><div>
+<p>Creates a new color in grayscale. Ever wanted to make a black and white film? Well now you can.</p>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="isDark"><code style="text-decoration:none">isDark</code><a aria-hidden="true" class="hash-link" href="#isDark" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/hue/blob/master/src/isDark.lua#L12"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Hue<!-- -->.</code><code class="green_3LnD">isDark</code><code>(</code><div class="inset_2cJr"><div><code>color<!-- -->: </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_17uy">-- <span>
+<p>The color to check</p>
+</span></span></div></div><code>) → </code><code class="blue_2Afy">boolean</code><span class="inlineDescription_17uy">-- <span>
+<p>Returns true if <code>color</code> is perceived to be dark, false otherwise</p>
+</span></span></div><div>
+<p>
+  Checks if the given color is considered to be "dark." That is, a color that
+  contrasts well with bright colors.
+</p>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="isLight"><code style="text-decoration:none">isLight</code><a aria-hidden="true" class="hash-link" href="#isLight" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/hue/blob/master/src/isLight.lua#L10"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Hue<!-- -->.</code><code class="green_3LnD">isLight</code><code>(</code><div class="inset_2cJr"><div><code>color<!-- -->: </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_17uy">-- <span>
+<p>The color to check</p>
+</span></span></div></div><code>) → </code><code class="blue_2Afy">boolean</code><span class="inlineDescription_17uy">-- <span>
+<p>Returns true if <code>color</code> is perceived to be light, false otherwise</p>
+</span></span></div><div>
+<p>
+  Checks if the given color is considered to be "light." That is, a color that
+  contrasts well with dark colors.
+</p>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="negate"><code style="text-decoration:none">negate</code><a aria-hidden="true" class="hash-link" href="#negate" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/hue/blob/master/src/negate.lua#L9"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Hue<!-- -->.</code><code class="green_3LnD">negate</code><code>(</code><div class="inset_2cJr"><div><code>color<!-- -->: </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_17uy">-- <span>
+<p>The color to check</p>
+</span></span></div></div><code>) → </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Color3" target="_blank" rel="noopener noreferrer">Color3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><span class="inlineDescription_17uy">-- <span>
+<p>Returns an inverse of <code>color</code></p>
+</span></span></div><div>
+<p>Negates the given color</p>
+</div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
+    &quot;functions&quot;: [
+        {
+            &quot;name&quot;: &quot;fromHex&quot;,
+            &quot;desc&quot;: &quot;Converts a given hex string into a Color3.\n\nThe hex string can optionall start with a hash # but it is not required.\n\nYou can also optionally use short, 3 character hex codes for convenience.\n\n```lua\nfromHex(\&quot;#fff\&quot;)\nfromHex(\&quot;#f0f0f0\&quot;)\nfromHex(\&quot;ff3685\&quot;)\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;hex&quot;,
+                    &quot;desc&quot;: &quot;A hexadecimal string representing a color&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Returns the Color3 equivalent of the hex string&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 19,
+                &quot;path&quot;: &quot;src/fromHex.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;grayscale&quot;,
+            &quot;desc&quot;: &quot;Creates a new color in grayscale. Ever wanted to make a black and white film? Well now you can.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;color&quot;,
+                    &quot;desc&quot;: &quot;The color to convert to grayscale&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Returns a new grayscale Color3 based off `color`&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 9,
+                &quot;path&quot;: &quot;src/grayscale.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;isDark&quot;,
+            &quot;desc&quot;: &quot;Checks if the given color is considered to be \&quot;dark.\&quot; That is, a color that\ncontrasts well with bright colors.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;color&quot;,
+                    &quot;desc&quot;: &quot;The color to check&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Returns true if `color` is perceived to be dark, false otherwise&quot;,
+                    &quot;lua_type&quot;: &quot;boolean&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 12,
+                &quot;path&quot;: &quot;src/isDark.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;isLight&quot;,
+            &quot;desc&quot;: &quot;Checks if the given color is considered to be \&quot;light.\&quot; That is, a color that\ncontrasts well with dark colors.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;color&quot;,
+                    &quot;desc&quot;: &quot;The color to check&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Returns true if `color` is perceived to be light, false otherwise&quot;,
+                    &quot;lua_type&quot;: &quot;boolean&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 10,
+                &quot;path&quot;: &quot;src/isLight.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;negate&quot;,
+            &quot;desc&quot;: &quot;Negates the given color&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;color&quot;,
+                    &quot;desc&quot;: &quot;The color to check&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Returns an inverse of `color`&quot;,
+                    &quot;lua_type&quot;: &quot;Color3&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 9,
+                &quot;path&quot;: &quot;src/negate.lua&quot;
+            }
+        }
+    ],
+    &quot;properties&quot;: [
+        {
+            &quot;name&quot;: &quot;colors&quot;,
+            &quot;desc&quot;: &quot;An assortment of predefined, accessible colors based off of the research in\n\&quot;Mutually Arising: Improving accessibility in Discord team role color\ncontrast (2021),\&quot; found here: https://sibr.dev/research.html&quot;,
+            &quot;lua_type&quot;: &quot;table&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 9,
+                &quot;path&quot;: &quot;src/colors.lua&quot;
+            }
+        }
+    ],
+    &quot;types&quot;: [],
+    &quot;name&quot;: &quot;Hue&quot;,
+    &quot;desc&quot;: &quot;An assortment of functions for dealing with Color3 values.&quot;,
+    &quot;source&quot;: {
+        &quot;line&quot;: 6,
+        &quot;path&quot;: &quot;src/init.lua&quot;
+    }
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#colors" class="table-of-contents__link toc-highlight">colors</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#fromHex" class="table-of-contents__link toc-highlight">.fromHex</a></li><li><a href="#grayscale" class="table-of-contents__link toc-highlight">.grayscale</a></li><li><a href="#isDark" class="table-of-contents__link toc-highlight">.isDark</a></li><li><a href="#isLight" class="table-of-contents__link toc-highlight">.isLight</a></li><li><a href="#negate" class="table-of-contents__link toc-highlight">.negate</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 vocksel. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/hue/assets/js/runtime~main.9cf1ed28.js"></script>
+<script src="/hue/assets/js/main.78a78f2c.js"></script>
+</body>
+</html>
