@@ -1,11 +1,12 @@
 --[=[
-	@class Colors
-
 	An assortment of predefined, accessible colors based off of the research in
 	"Mutually Arising: Improving accessibility in Discord team role color
-	contrast (2021)" (https://sibr.dev/research.html)
+	contrast (2021)," found here: https://sibr.dev/research.html
+
+	@within Hue
+	@prop colors table
 ]=]
-return {
+local colors = {
 	breathmints = Color3.fromRGB(0, 164, 85),
 	crabs = Color3.fromRGB(205, 118, 114),
 	dale = Color3.fromRGB(136, 119, 238),
@@ -28,3 +29,5 @@ return {
 	tigers = Color3.fromRGB(240, 93, 20),
 	wings = Color3.fromRGB(200, 113, 82),
 }
+
+return colors
