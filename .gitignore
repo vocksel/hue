@@ -13,5 +13,8 @@
 /Packages
 /wally.lock
 
+# Moonwave
+build
+
 # Other
 /*.log

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "moonwave dev",
+    "deploy": "moonwave build --publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

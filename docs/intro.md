@@ -1,17 +1,18 @@
-# Hue
+---
+sidebar_position: 1
+---
 
-[![CI](https://github.com/vocksel/hue/actions/workflows/ci.yml/badge.svg)](https://github.com/vocksel/hue/actions/workflows/ci.yml)
-[![Docs](https://img.shields.io/badge/docs-website-brightgreen)](https://vocksel.github.io/hue)
+# Getting Started
 
-[Description of your package]
-
-## Usage
-
-[Example of how to use the package]
+The first thing to do when getting started is to install the package.
 
 ## Installation
 
 Installing the package is quick and easy whether you use a package manager like [Wally](https://github.com/UpliftGames/wally) or work directly in Studio.
+
+:::info
+Regardless of the installation method you should wind up with a `Packages` folder in `ReplicatedStorage`. All future docs will assume the package can be accessed at `ReplicatedStorage.Packages.Hue`.
+::::
 
 ### Wally (Recommended)
 
@@ -29,14 +30,6 @@ Make sure the resulting `Packages` folder is synced into your experience using a
 * Download a copy of the rbxm from the [releases page](https://github.com/vocksel/hue/releases/latest) under the Assets section.
 * Drag and drop the file into Roblox Studio to add it to your experience.
 
-## Documentation
+## Next Steps
 
-You can find the Hue documentation [here](https://vocksel.github.io/hue).
-
-## Contributing
-
-See the [contributing guide](https://vocksel.github.io/hue/docs/contributing).
-
-## License
-
-[MIT License](LICENSE)
+With the package installed you are now ready to start using it! Head on over to the [API reference](/api/Hue) to learn about the functions you have available.

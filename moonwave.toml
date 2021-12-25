@@ -1,0 +1,5 @@
+[home]
+enabled = true
+
+[docusaurus]
+tagline = "Assortment of functions for working with Color3 values"
